@@ -372,6 +372,7 @@ data:extend{
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         crafting_categories = {"electrochemistry", "chemistry"},
         use_mirroring = true,
+        icon_draw_specification = {scale = 2, shift = {0, -0.3}},
         fluid_boxes =
         {
           {
@@ -574,6 +575,7 @@ data:extend{
         collision_box = {{-1.6, -1.6}, {1.6, 1.6}},
         selection_box = {{-2, -2}, {2, 2}},
         crafting_categories = {"mechanics"},
+        icon_draw_specification = {shift = {0, -0.25}},
         use_mirroring = true,
         fluid_boxes = {
             {
@@ -733,6 +735,7 @@ data:extend{
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 0.3, result = "pressure-turbine"},
     max_health = 300,
+    drawing_box_vertical_extension = 2.2,
     corpse = "small-remnants",
     dying_explosion = "medium-explosion",
     custom_tooltip_fields = {{name = {"custom-tooltip.pressure-turbine-name"}, value = {"custom-tooltip.pressure-turbine-value"}}},
@@ -902,6 +905,7 @@ working_visualisations = {{
     dying_explosion = "electric-furnace-explosion",
     circuit_wire_max_distance = 9,
     circuit_connector = circuit_connector_definitions["crusher"],
+    icon_draw_specification = {shift = {0, -0.45}},
     collision_box = {{-0.7, -1.2}, {0.7, 1.2}},
     surface_conditions =
     {
